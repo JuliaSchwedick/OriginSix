@@ -1,11 +1,11 @@
 /*----------------RESET O CSS------------*/
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
- 
+
 
 ul {
     list-style: none;
@@ -26,15 +26,15 @@ img {
 /*----------------VARIABLES------------*/
 
 :root {
-    --header-height: 4.5rem;      
-                    
+    --header-height: 4.5rem;
+
     /*colors*/
     --hue: 159;
     /* HSL color mode */
-    --base-color:hsl(211, 18%, 51%) ;
+    --base-color: hsl(211, 18%, 51%);
     --base-color-second: hsl(271, 44%, 75%);
     --base-color-alt: hsl(198, 46%, 35%);
-    --title-color: 	hsl(0, 0%, 0%);
+    --title-color: hsl(0, 0%, 0%);
     --text-color: hsl(0 0% 46%);
     --text-color-light: hsl(0 0% 98%);
     --body-color: hsl(0 0% 98%);
@@ -77,10 +77,9 @@ body {
 
 .divider-1 {
     height: 1px;
-    background: linear-gradient(
-    270deg,
-    hsl(204, 22%, 58%) 0%, 
-    rgba(204, 244, 230, 0.34) 100%);
+    background: linear-gradient(270deg,
+            hsl(204, 22%, 58%) 0%,
+            rgba(204, 244, 230, 0.34) 100%);
 }
 
 /*----------------LAYOUT------------*/
@@ -104,13 +103,13 @@ body {
     margin-bottom: 2rem;
     display: flex;
 
-    
+
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     background-color: var(--body-color);
-    width: 100%;  
+    width: 100%;
 }
 
 
@@ -119,9 +118,9 @@ main {
 }
 
 
- /*=====LOGO ===== */
+/*=====LOGO ===== */
 
- .logo{
+.logo {
     font: 700 1.31rem 'Poppins', sans-serif;
     color: var(--title-color);
 
@@ -132,7 +131,7 @@ main {
 }
 
 
-   /*=====NAVIGATION ===== */
+/*=====NAVIGATION ===== */
 
 nav {
     height: var(--header-height);
@@ -147,6 +146,7 @@ nav ul li {
     text-align: center;
 
 }
+
 nav ul li a {
     transition: color 0.3s;
     position: relative;
@@ -183,7 +183,7 @@ nav .menu {
 nav.show .menu {
     opacity: 1;
     visibility: visible;
-   
+
     background: var(--body-color);
 
     height: 100vh;
@@ -204,6 +204,32 @@ nav.show nav ul.grid {
     gap: 4rem;
 }
 
+/*-------toggle menu-------*/
+
+.toggle {
+    color: var(--base-color);
+    font-size: 1.5rem;
+}
+
+
+nav .icon-close{
+    visibility: hidden;
+    opacity: 0;
+
+    position: absolute;
+    right: 1.5rem;
+
+    /*transition adicionar*/
+
+
+}
+
+
+nav.show div.icon-close{
+    visibility: visible;
+    opacity: 1;
+}
+
 /*----------------HOME------------*/
 
 #home {
@@ -212,7 +238,7 @@ nav.show nav ul.grid {
 
 #home .container {
     margin: 0;
-    
+
 }
 
 #home .image {
@@ -255,4 +281,3 @@ nav.show nav ul.grid {
     max-width: 100%;
 }
 
-/*salvar a alteração do menu*/
