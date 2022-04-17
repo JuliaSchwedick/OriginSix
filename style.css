@@ -209,6 +209,7 @@ nav.show nav ul.grid {
 .toggle {
     color: var(--base-color);
     font-size: 1.5rem;
+    cursor: pointer;
 }
 
 
