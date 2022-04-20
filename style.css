@@ -78,8 +78,17 @@ body {
 .divider-1 {
     height: 1px;
     background: linear-gradient(270deg,
-            hsl(204, 22%, 58%) 0%,
-            rgba(204, 244, 230, 0.34) 100%);
+     hsl(204, 22%, 58%),
+     rgba(204, 244, 230, 0.34)
+    );
+}
+
+.divider-2 {
+    height: 1px;
+    background: linear-gradient(270deg,
+     rgba(204, 244, 230, 0.34),
+     hsl(204, 22%, 58%)    
+    );
 }
 
 /*----------------LAYOUT------------*/
@@ -96,6 +105,10 @@ body {
 
 .section {
     padding: 5rem 0;
+}
+
+.section .title{
+    margin-bottom: 1rem;
 }
 
 #header {
@@ -284,6 +297,11 @@ nav.show div.icon-close{
 
 /*--------ABOUT------------*/
 
+#about {
+    background: white;
+}
+
+
 #about .container {
     margin: 0;
 
@@ -318,3 +336,5 @@ nav.show div.icon-close{
     margin-right: 1.5rem;
     
 }
+
+
