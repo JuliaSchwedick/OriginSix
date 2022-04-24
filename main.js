@@ -30,7 +30,7 @@ window.addEventListener('scroll', function () {
     //scroll maior que a altura do header
     header.classList.add('scroll')
   } else {
-    header.classList.remover('scroll')
+    header.classList.remove('scroll')
     //menor que a altura do header
   }
 })
