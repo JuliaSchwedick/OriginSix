@@ -34,3 +34,14 @@ window.addEventListener('scroll', function () {
     //menor que a altura do header
   }
 })
+
+/*Testimonials carousel slider swiper*/
+
+const swiper = new Swiper('.swiper', {
+  slidesPerviw: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  keyboard: true
+})
