@@ -8,6 +8,14 @@
 
     <!--ICONS-->
     <link rel="stylesheet" href="assets/style.css" />
+
+    <!--------Swiper--------->
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
     <!--STYLES-->
     <link rel="stylesheet" href="style.css" />
 
@@ -20,12 +28,6 @@
     />
   </head>
 
-  <!--------Swiper--------->
-
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-  />
   <body>
     <header id="header">
       <nav class="container">
@@ -156,7 +158,8 @@
       <!--------Testimonials---->
 
       <section class="section" id="testimonials">
-        <div class="container grid">
+        <div class="container swiper">
+          <!-- Adicionar aqui a classe swiper -->
           <header>
             <h2 class="title">Depoimentos de quem já passou por aqui</h2>
           </header>
@@ -167,11 +170,13 @@
                   <p>
                     <span>&ldquo;</span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
                   </p>
                   <cite>
                     <img
                       src="assets/71QAGVvYVsL._AC_SL1200_.jpg"
-                      alt="Dog com peruca"
+                      alt="Cachorrinho com peruca"
                     />
                     Auau
                   </cite>
@@ -183,13 +188,15 @@
                   <p>
                     <span>&ldquo;</span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
                   </p>
                   <cite>
                     <img
-                      src="https://randomuser.me/api/portraits/women/9.jpg"
-                      alt="foto de Wanessa Souza"
+                      src="assets/WhatsApp Image 2022-04-30 at 07.40.56.jpeg"
+                      alt="Foto de gatinho com peruca"
                     />
-                    Wanessa Souza
+                    Minerva
                   </cite>
                 </blockquote>
               </div>
@@ -199,17 +206,17 @@
                   <p>
                     <span>&ldquo;</span>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Rerum blanditiis saepe nam excepturi explicabo ipsa error
+                    ipsam neque
                   </p>
                   <cite>
-                    <img
-                      src="assets/cat.jpg"
-                      alt="foto de um gatinho de peruca"
-                    />
+                    <img src="assets/cat.jpg" alt="Gatinho com peruca" />
                     Miau
                   </cite>
                 </blockquote>
               </div>
             </div>
+
             <!-- If we need pagination -->
             <div class="swiper-pagination"></div>
           </div>

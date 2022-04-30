@@ -37,8 +37,8 @@ window.addEventListener('scroll', function () {
 
 /*Testimonials carousel slider swiper*/
 
-const swiper = new Swiper('.swiper', {
-  slidesPerviw: 1,
+const swiper = new Swiper('.swiper-container', {
+  slidesPerview: 1,
   pagination: {
     el: '.swiper-pagination'
   },
