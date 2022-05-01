@@ -38,7 +38,7 @@ window.addEventListener('scroll', function () {
 /*Testimonials carousel slider swiper*/
 
 const swiper = new Swiper('.swiper-container', {
-  slidesPerview: 1,
+  slidesPerView: 1,
   pagination: {
     el: '.swiper-pagination'
   },
@@ -63,3 +63,14 @@ scrollReveal.reveal(
 `,
   { interval: 100 }
 )
+
+/*back to top button*/
+
+const backToTopButton = document.querySelector('.back-to-top')
+window.addEventListener('scroll', function () {
+  if (window.scrollY >= 560) {
+    backToTopButton.classList.add('show')
+  } else {
+    backToTopButton.classList.remove('show')
+  }
+})
