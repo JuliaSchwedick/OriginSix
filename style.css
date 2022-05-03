@@ -66,7 +66,6 @@ body {
     color: var(--title-color);
     -webkit-font-smoothing: auto;
 
-
 }
 
 .button {
@@ -557,7 +556,7 @@ footer .social a:hover {
     padding: 0.3rem;
     clip-path: circle();
 
-    font-size: 1rem;
+    font-size: 2rem;
     line-height: 0;
 
     visibility: hidden;
@@ -652,49 +651,75 @@ footer .social a:hover {
        text-align: left;
    }
 
-/*about*/
+    /*about*/
 
-#about .container {
-    margin: 0 auto;
-    grid-auto-flow: column;
-}
-
-
-/*services*/
-
-.cards {
-    grid-template-columns: 1fr  1fr 1fr;
-}
-
-.card {
-    padding-left: 3rem;
-    padding-right: 3rem;
-}
-
-
-
-/*testimonials*/
-
-#testimonials .container {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-
-
-}
-
-
-
-@media (min-width:992px){
-
-    :root{
-        --title-font-size: 2.25rem;
-        --subtitle-font-size: 1.125rem
-    
-    
+    #about .container {
+        margin: 0 auto;
+        grid-auto-flow: column;
     }
-}
+
+
+    /*services*/
+
+    .cards {
+        grid-template-columns: 1fr  1fr 1fr;
+    }
+
+    .card {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+
+
+    /*testimonials*/
+
+    #testimonials .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*contact*/
+
+    #contact .container {
+        grid-auto-flow: column;
+        align-items: center;
+    }
+
+    #contact .text {
+        max-width: 25rem;
+
+    }
+
+    /*footer*/
+
+    footer.section {
+        padding: 3.75rem 0;
+    }
+
+    footer .container {
+        grid-auto-flow: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    footer .logo {
+        font-size: 2.25rem;
+    }
+
+
+    }
+
+
+
+    @media (min-width:992px){
+
+        :root{
+            --title-font-size: 2.25rem;
+            --subtitle-font-size: 1.125rem
+        
+        
+        }
+    }
 
  
