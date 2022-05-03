@@ -524,6 +524,13 @@ footer i {
 
 footer .social a {
     margin-right: 2rem;
+    transition: 0.3s;
+    display: inline-block; /*para poder se mexer*/
+}
+
+
+footer .social a:hover {
+    transform: translateY(-8px); /*add inline-block acima*/
 }
 
 /*-----Back to Top----*/
@@ -546,10 +553,12 @@ footer .social a {
     opacity: 0;
 
     transition: 0.3s;
+    transform: translateY(100%);
 }
 
 .back-to-top.show {
     visibility: visible;
     opacity: 1;
+    transform: translateY(0);
 }
 
