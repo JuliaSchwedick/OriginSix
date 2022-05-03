@@ -578,6 +578,8 @@ footer .social a:hover {
 
 @media(min-width: 1200px) {
 
+    /*reusable classes*/
+
     .container {
         max-width: 1120px;
         margin-left: auto;
@@ -587,6 +589,20 @@ footer .social a:hover {
     .section {
         padding: 10rem 0;
     }
+
+    .section header,
+    #testimonials header {
+        max-width: 32rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        height: 3.125rem;
+    }
+
+    /*navigation*/
 
     nav .menu {
         opacity: 1;
@@ -608,15 +624,21 @@ footer .social a:hover {
    }
 
 
+   /*layout*/
+
+   main {
+    margin-top: var(--header-height);
+    }
+
+
     /*home*/
 
     #home .container {
         grid-auto-flow: column;
         width: fit-content;
         justify-content: space-between;
-        
+        margin: 0 auto;  
     }
-
 
 
    #home .image {
@@ -626,14 +648,42 @@ footer .social a:hover {
 
    #home .text {
        order: 0;
+       max-width: 24rem;
+       text-align: left;
    }
 
+/*about*/
 
-    main {
-    margin-top: var(--header-height);
-    }
+#about .container {
+    margin: 0 auto;
+    grid-auto-flow: column;
 }
 
+
+/*services*/
+
+.cards {
+    grid-template-columns: 1fr  1fr 1fr;
+}
+
+.card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+
+
+/*testimonials*/
+
+#testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+}
 
 
 
@@ -646,3 +696,5 @@ footer .social a:hover {
     
     }
 }
+
+ 
